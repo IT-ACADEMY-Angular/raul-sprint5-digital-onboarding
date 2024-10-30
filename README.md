@@ -9,7 +9,6 @@ Completados todos los ejercicios que se pedían.
 
 - Npm instalado en tu sistema.
 - Node instalado en tu sistema.
-- Angular instalado, almenos: (Angular CLI: 17.3.11)
 - Visual Studio Code (Recomendado)
 
 ## 🛠️ Instalación

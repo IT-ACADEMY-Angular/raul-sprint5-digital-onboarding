@@ -1,3 +1,5 @@
-<h3>Dedica muchas horas</h3>
-Al menos 30 horas a la semana. Si no tienes suficiente, tendrás que dedicarle más
-horas. Al principio parece imposible, pero notarás una mejoría rápidamente.
+<div *ngFor="let f of frasesHijo">
+    <h3>{{ f.title }}</h3>
+    <p>{{ f.description }}</p>
+    <br>
+</div>
