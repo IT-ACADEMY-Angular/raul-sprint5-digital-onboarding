@@ -1,5 +1,6 @@
-<div *ngFor="let f of frasesHijo">
+<div *ngFor="let f of frasesHijo" [style.backgroundColor]="f.bgcolor">
     <h3>{{ f.title }}</h3>
     <p>{{ f.description }}</p>
+    <img [src]="f.img" alt="{{ f.title }}" class="step-image" />
     <br>
 </div>
