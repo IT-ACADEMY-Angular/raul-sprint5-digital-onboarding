@@ -1,0 +1,35 @@
+div {
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.text-container {
+    flex: 2;
+    padding: 0px 25px;
+    padding-top: 30px;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.main-container {
+    padding: 0px 0px !important;
+    border-radius: 50px;
+}
+
+.titulo-card{
+    font-weight: bolder ;
+    font-size: x-large;
+}
+
+.texto-card{
+    color: grey;
+    
+}

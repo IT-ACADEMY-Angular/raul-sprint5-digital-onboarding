@@ -1,6 +1,23 @@
-<div *ngFor="let f of frasesHijo" [style.backgroundColor]="f.bgcolor">
-    <h3>{{ f.title }}</h3>
-    <p>{{ f.description }}</p>
-    <img [src]="f.img" alt="{{ f.title }}" class="step-image" />
-    <br>
+<div class="container-fluid vh-100">
+    <div class="row h-100 w-75 ">
+        <div *ngFor="let f of frasesHijo" class="col-4 d-flex flex-column justify-content-center align-items-center my-5 main-container" [style.backgroundColor]="f.bgcolor">
+
+            <div class="image-container">
+                <img [src]="f.img" alt="{{ f.title }}" class="step-image" />
+            </div>
+
+            <div class="text-container">
+                <div>
+                    <span class="titulo-card">{{ f.title }}</span>
+                </div>
+                <div>
+                    <span class="texto-card">{{ f.description }}</span>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
 </div>
+
