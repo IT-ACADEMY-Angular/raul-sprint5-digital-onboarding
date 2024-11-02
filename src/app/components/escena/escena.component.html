@@ -16,8 +16,9 @@
         </div>
         <div class="controls-group">
           <div class="dot-container">
-            <span *ngFor="let frase of frasesHijo; let i = index" [class.dot-active]="i === currentStep"
-              class="dot"></span>
+            <span *ngFor="let frase of frasesHijo; let i = index" [class.dot-active]="i === currentStep" class="dot"
+              (click)="goToStep(i)">
+            </span>
           </div>
           <div class="button-container">
             <button class="btn" *ngIf="currentStep > 0" (click)="leftPreviousStep()">

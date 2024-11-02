@@ -26,4 +26,10 @@ export class EscenaComponent {
     }
   }
 
+  goToStep(stepIndex: number) {
+    if (stepIndex >= 0 && stepIndex < this.frasesHijo.length) {
+      this.currentStep = stepIndex;
+    }
+  }
+
 }
