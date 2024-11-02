@@ -42,9 +42,9 @@ $ ng serve -o
 - TYPESCRIPT
 - HTML
 - CSS
-- ...
+- BOOTSTRAP
 
 ## ✨ Características
 
-- Cada ejercicio está en un commit
-... LOADING, lo iré rellenando
+- Cada ejercicio está en un commit.
+- Todo el contenido se generá dinámicamente como se pedía.
