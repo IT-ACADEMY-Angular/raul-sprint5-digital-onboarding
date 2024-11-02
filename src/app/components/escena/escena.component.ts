@@ -14,21 +14,31 @@ export class EscenaComponent {
 
   currentStep: number = 0;
 
+  fadeIn: boolean = true;
+
+  changeStep(stepIndex: number) {
+    this.fadeIn = false;
+    setTimeout(() => {
+      this.currentStep = stepIndex;
+      this.fadeIn = true;
+    }, 400);
+  }
+
   leftPreviousStep() {
     if (this.currentStep > 0) {
-      this.currentStep--;
+      this.changeStep(this.currentStep - 1);
     }
   }
 
   rightNextStep() {
     if (this.currentStep < this.frasesHijo.length - 1) {
-      this.currentStep++;
+      this.changeStep(this.currentStep + 1);
     }
   }
 
   goToStep(stepIndex: number) {
     if (stepIndex >= 0 && stepIndex < this.frasesHijo.length) {
-      this.currentStep = stepIndex;
+      this.changeStep(stepIndex);
     }
   }
 

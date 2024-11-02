@@ -91,3 +91,13 @@ div {
   outline: none;
   border: none;
 }
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out 0.15s;
+}
+
+.fade-in {
+  opacity: 2;
+  transition: opacity 0.4s ease-in-out;
+}

@@ -3,7 +3,8 @@
     <!-- cambiamos el ngFor por el ngIf, ya no queremos recorrer, queremos buscar las posicion de currentStep y pintarlo en el html -->
     <div *ngIf="frasesHijo.length > 0"
       class="col-4 d-flex flex-column justify-content-center align-items-center my-5 main-container"
-      [style.backgroundColor]="frasesHijo[currentStep].bgcolor">
+      [style.backgroundColor]="frasesHijo[currentStep].bgcolor"
+      [ngClass]="fadeIn ? 'fade-in' : 'fade'">
       <div class="image-container">
         <img [src]="frasesHijo[currentStep].img" alt="{{ frasesHijo[currentStep].title }}" class="step-image" />
       </div>
