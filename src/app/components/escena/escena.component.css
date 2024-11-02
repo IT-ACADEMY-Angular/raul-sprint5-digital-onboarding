@@ -86,3 +86,8 @@ div {
   max-width: 100%;
   height: auto;
 }
+
+.btn:focus, .btn, .btn:active {
+  outline: none;
+  border: none;
+}

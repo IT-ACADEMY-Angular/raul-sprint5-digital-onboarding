@@ -11,4 +11,19 @@ import { CommonModule } from '@angular/common';
 })
 export class EscenaComponent {
   @Input() frasesHijo: IStep[] = [];
+
+  currentStep: number = 0;
+
+  leftPreviousStep() {
+    if (this.currentStep > 0) {
+      this.currentStep--;
+    }
+  }
+
+  rightNextStep() {
+    if (this.currentStep < this.frasesHijo.length - 1) {
+      this.currentStep++;
+    }
+  }
+
 }
